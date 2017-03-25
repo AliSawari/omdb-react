@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Button  from './Components/Button';
 import Container from './Components/Container';
 import Row from './Components/Row'
 import Movie from './Components/Movie'
@@ -51,7 +50,7 @@ class App extends Component {
             <label htmlFor="year">Year</label>
             <input type="number" id="year" className="form-control" ref={node => {this.year = node}} onChange={this.handleYearChange}/>
           </div>
-          <Button type="submit" className="btn btn-primary">Search</Button>
+          <button type="submit" className="btn btn-primary">Search</button>
         </form>
         <Row>
           <Movie res={this.state.res} />
